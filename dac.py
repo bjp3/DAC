@@ -29,6 +29,7 @@ def max_subarray_sum_dac(array, left, right):
 
     # find the maximum subarray sum in the left half, right half, and crossing the mid this will send the
     # values back through the method.
+    # ***TEST COMMENT BY NJP***
     left_sum, left_i, left_j = max_subarray_sum_dac(array, left, mid)
     right_sum, right_i, right_j = max_subarray_sum_dac(array, mid + 1, right)
     cross_sum, cross_i, cross_j = max_crossing_sum(array, left, mid, right)
